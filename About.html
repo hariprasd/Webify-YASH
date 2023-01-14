@@ -5,8 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About you</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body>
-  <p> An introduction of the designers. </p>
+<body class="text-center m-auto">
+  
+  <div className="flex flex-col gap-5 p-5 m-4 grow-0">  
+    <h1 className="text-2xl"> Credits</h1>
+    
+    <section className="flex flex-row flex-wrap w-full text-center items-center gap-8 md:flex-nowrap">
+
+        <div className="flex flex-col m-auto items-center gap-8  p-5 "> 
+            <a className="w-3/6"  href="https://github.com/hariprasd"><img width="250px" height="250px" src="assets/cred/hp.webp" alt="hariprasad"></img></a>
+            <div>
+                <p className="text-white text-xl">Hari Prasad, CSE</p>  
+                <p className="text-slate-400 pt-2  text-xs">Artist, Product Designer & Frontend Dev</p>
+            </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-8  p-5">
+            <a className="w-3/6 "  href="https://github.com/Yasar195"><img width="250px" height="250px" src="assets/cred/yas.webp" alt="yasar"></img></a>
+            <div>
+                <p className="text-white text-xl ">Yasar Arafath, CSE</p>
+                <p className="text-slate-400  pt-2 text-xs">Fullstack Dev & Jr. DevOps</p>
+            </div>
+        </div> 
+
+        <div className="flex flex-col  items-center gap-8 p-5" >
+            <a className="w-3/6 "  href="https://github.com/shibinashraf"><img  width="250px" height="250px" src="assets/cred/shb.webp" alt="shibin"></img></a>
+            <div>
+                <p className="text-white text-xl ">Shibin Ashraf, CSE</p>      
+                <p className="text-slate-400 pt-2 text-xs">Techie & Developer</p>
+            </div>
+        </div>
+
+    </section>
+
+  </div>
 </body>
 </html>
