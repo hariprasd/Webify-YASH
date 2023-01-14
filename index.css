@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body{
+    font-family: Manrope;
+    background-color: #0D131B;
+}
+
+.syne{
+    font-family: Syne;
+}
+
+.blu{
+    color: #6383A9;
+}
