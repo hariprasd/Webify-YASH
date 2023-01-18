@@ -3,54 +3,105 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horror movies</title>
+  <link rel="stylesheet" type="text/css" href="/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-[#1B0D0D] font-[Syne] overflow-x-hidden" >
+    
+    <div class="ellipse rounded-full bg-red-900/30 blur-[80px] bottt top-[35%] fixed h-1/2 w-full lg:w-auto "></div>
+    
+    <div class="ellipse rounded-full pc bg-red-900/30 w-[30rem] blur-[110px] bottt top-[5%] right-[-18%] fixed "></div>
+    <div class="ellipse rounded-full pc bg-red-900/30 w-[30rem] blur-[110px] bottt bottom-[15%] left-[-10%] fixed "></div>
+    
+    <div class="text-center z-[999] m-auto w-full absolute text-white">
+        <div class=" "> 
+            <h1 class=" font-bold text-[1rem] md:text-xl mt-8 md:mt-12 uppercase">Binge <span class="text-orange-400">Watch</span></h1>
+            <img class="pointer-events-none select-none w-[6rem] my-6  md:w-[12rem] m-auto" src="/assets/genresvgs/horror.svg">
+        </div>
+    </div>
+    <br><br>
 
-    <center>
-        <h1><strong>Horror movies</strong></h1>
-    </center>
-    <div>
-        <a href="thing.html">
-            <h3>5. The Thing</h3>
-            <img width="250px" height="250px" src="https://images-na.ssl-images-amazon.com/images/I/61Mf%2B-TcV8L.jpg" alt="">
-        </a>
-        <p>A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims.</p>
-    </div>
-  
-   <div>
-       <a href="tumbbad.html">
-            <h3>4. Tumbbad</h3>
-            <img width="250px" height="250px"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8lwsefIF_dHj01pdCK1qJ6aqLlAu7juX2Oe9ZjazQ&s" alt="">
-        </a>
-        <p>A mythological story about a goddess who created the entire universe. The plot revolves around the consequences when humans build a temple for her first-born.</p>
-    </div>
-  
-   <div>
-       <a href="shining.html">
-            <h3>3. The Shining</h3>
-            <img width="250px" height="250px" src="https://alternativemovieposters.com/wp-content/uploads/2022/10/Stella-Ygris_Shining.jpg" alt="">
-        </a>
-        <p>A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.</p>
-    </div>
-  
-  <div>
-      <a href="psycho.html">
-            <h3>2. Psycho</h3>
-            <img width="250px" height="250px" src="https://i.etsystatic.com/21420603/r/il/81fd11/2782690640/il_fullxfull.2782690640_nn4r.jpg" alt="">
-        </a>
-        <p>A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run and checks into a remote motel run by a young man under the domination of his mother.</p>
-    </div>
-  
-  <div>
-      <a href="alien.html">
-            <h3>1. Alien</h3>
-            <img width="250px" height="250px" src="https://cdn.shopify.com/s/files/1/0969/9128/products/alien--covenant-the-official-collector--s-edition-cover-102516_1a9162a0-d5b6-4288-896b-af6caf2c71b6.jpg?v=1514034484" alt="">
-        </a>
-        <p>The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission.</p>
-    </div>
+    <section class="flex flex-col gap-8 max-w-[95%] lg:max-w-[45%] mb-[2rem]  mt-[7rem] md:mt-[12rem] shrink-0 text-white m-auto ">
 
+        <a><div class="flex flex-row-reverse md:flex-row p-2 md:p-4 border-white/[.1] border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] shrink-0 md:w-[10rem] md:p-4 object-contain" src="/assets/film-solo/mob/hor01.webp" >
+            <div class="flex flex-col gap-6 justify-between p-2 md:p-5 ">
+                <h3 class="text-lg md:text-xl uppercase font-bold">Alien</h3>
+                <p class="text-xs md:text-md text-white/60 shrink-9 -mt-4 md:-mt-12">The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission.</p>
+            <div class="text-sm md:text-md">
+                <p>Duration  <span class="text-white/60"> 2hrs 34mins</span></p>
+                <p>Rating   <span class="text-yellow-500"> ★★★★✩</span></p>
+            </div>
+            </div>
+        </div></a>
+
+        <a><div class="flex flex-row-reverse md:flex-row p-2 md:p-4 border-white/[.1] border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] shrink-0 md:w-[10rem] md:p-4 object-contain" src="/assets/film-solo/mob/hor02.webp" >
+            <div class="flex flex-col gap-6 justify-between p-2 md:p-5 ">
+                <h3 class="text-lg md:text-xl uppercase font-bold">Psycho</h3>
+                <p class="text-xs md:text-md text-white/60 shrink-9 -mt-4 md:-mt-12">A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run and checks into a remote motel run by a young man under the domination of his mother.</p>
+            <div class="text-sm md:text-md">
+                <p>Duration  <span class="text-white/60"> 2hrs 34mins</span></p>
+                <p>Rating   <span class="text-yellow-500"> ★★★★✩</span></p>
+            </div>
+            </div>
+        </div></a>
+
+        <a><div class="flex flex-row-reverse md:flex-row p-2 md:p-4 border-white/[.1] border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] shrink-0 md:w-[10rem] md:p-4 object-contain" src="/assets/film-solo/mob/hor03.webp" >
+            <div class="flex flex-col gap-6 justify-between p-2 md:p-5 ">
+                <h3 class="text-lg md:text-xl uppercase font-bold">The Shining</h3>
+                <p class="text-xs md:text-md text-white/60 shrink-9 -mt-4 md:-mt-12">
+                    A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.</p>
+            <div class="text-sm md:text-md">
+                <p>Duration  <span class="text-white/60"> 2hrs 34mins</span></p>
+                <p>Rating   <span class="text-yellow-500"> ★★★★✩</span></p>
+            </div>
+            </div>
+        </div></a>
+
+        <a><div class="flex flex-row-reverse md:flex-row p-2 md:p-4 border-white/[.1] border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] shrink-0 md:w-[10rem] md:p-4 object-contain" src="/assets/film-solo/mob/hor04.webp" >
+            <div class="flex flex-col gap-6 justify-between p-2 md:p-5 ">
+                <h3 class="text-lg md:text-xl uppercase font-bold">Tumbbad</h3>
+                <p class="text-xs md:text-md text-white/60 shrink-9 -mt-4 md:-mt-12">
+                    A mythological story about a goddess who created the entire universe. The plot revolves around the consequences when humans build a temple for her first-born.</p>
+            <div class="text-sm md:text-md">
+                <p>Duration  <span class="text-white/60"> 2hrs 34mins</span></p>
+                <p>Rating   <span class="text-yellow-500"> ★★★★✩</span></p>
+            </div>
+            </div>
+        </div></a>
+
+        <a><div class="flex flex-row-reverse md:flex-row p-2 md:p-4 border-white/[.1] border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] shrink-0 md:w-[10rem] md:p-4 object-contain" src="/assets/film-solo/mob/hor05.webp" >
+            <div class="flex flex-col gap-6 justify-between p-2 md:p-5 ">
+                <h3 class="text-lg md:text-xl uppercase font-bold">The Thing</h3>
+                <p class="text-xs md:text-md text-white/60 shrink-9 -mt-4 md:-mt-12">A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims.</p>
+            <div class="text-sm md:text-md">
+                <p>Duration  <span class="text-white/60"> 2hrs 34mins</span></p>
+                <p>Rating   <span class="text-yellow-500"> ★★★★✩</span></p>
+            </div>
+            </div>
+        </div></a>
+
+    </section>
+
+    <section class="flex gap-7 md:gap-12 p-6 mb-2 uppercase text-white/60 m-auto justify-center w-full items-center text-sm">
+        <a  href="/About.html"  class=" hover:text-white">Designers</a>
+        <div class="flex gap-2">
+            <a  href="https://petrichor.events/technical_events/event?id=4&tech=1"  class=" hover:text-white">Webify 23</a>
+            <a  href="https://www.facebook.com/petrichor.iitpkd/" ><img class="opacity-60 w-[1.2rem] hover:opacity-100" src="/assets/icons/Frame-1.svg"></a>
+            <a href="https://www.instagram.com/petrichor.iitpkd/?hl=en" ><img class="opacity-60 w-[1.2rem] hover:opacity-100" src="/assets/icons/Frame-2.svg"></a>
+        </div>
+    </section>
 
 </body>
 

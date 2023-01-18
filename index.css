@@ -1,11 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 body{
-    font-family: Manrope;
+    font-family: Syne;
     background-color: #0D131B;
+}
+
+.ellipse{
+    height: 250px;
+    width: 250px;
+}
+.bottt{
+    z-index: -9999;
+}
+
+.toppp{
+    z-index: 9999;
 }
 
 .syne{
@@ -15,3 +22,79 @@ body{
 .blu{
     color: #6383A9;
 }
+
+
+/*HP Classics --- */
+
+    
+  /*Scrollbar customized*/
+
+  ::-webkit-scrollbar-track {
+    visibility: hidden;
+    background-color: transparent;
+    overflow: overlay;
+    width: 5px;
+    z-index: 100;
+  }
+
+  ::-webkit-scrollbar {
+    visibility: hidden;
+    width: 5px;
+    overflow: overlay;
+    z-index: 100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    visibility: visible;
+    width: 10px;
+    background-color: aliceblue;
+    border-radius: 100px;
+    overflow: overlay;
+    z-index: 150;
+  }
+
+
+  .pc{
+    visibility: visible;
+    display: flex;
+  }
+
+  .mob{
+    visibility: hidden;
+    display: none;
+  }
+
+  .scaleup{
+    transition: scale 0.2s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+  }
+  .scaleup:hover{
+    scale: 105%;
+  }
+
+  .hide{
+    display: none;
+    visibility: hidden;
+  }
+
+/*--- HP Classics */
+
+
+
+
+@media screen and (max-width: 640px) {
+
+    /*HP Classics --- */
+    .mob{
+      visibility: visible;
+      display:flex;
+    }
+    .pc{
+      visibility: hidden;
+      display: none;
+    }
+    /*--- HP Classics */
+  
+  }
+  

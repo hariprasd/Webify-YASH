@@ -12,37 +12,66 @@
     <title>Home Page</title>
 </head>
 
-<body>
+<body class="bg-[#1B0D0D]">
+    
+    <div class="ellipse rounded-full bg-red-900/30 blur-[80px] bottt top-[35%] absolute h-1/2 w-full lg:w-auto "></div>
+    
+    <div class="ellipse rounded-full pc bg-red-900/30 blur-[80px] bottt top-[35%] right-[6%] absolute "></div>
+    <div class="ellipse rounded-full pc bg-red-900/30 blur-[80px] bottt bottom-[5%] left-[5%] absolute "></div>
+
     <div id="header" class="text-center text-white">
-        <h1 class=" syne font-bold text-xl md:text-3xl mt-8 md:mt-12 uppercase">Binge <span class="text-orange-400">Watch</span></h1>
-        <p class="uppercase pt-1 md:pt-3 text-xs text-slate-300 md:text-sm tracking-[6px] md:tracking-[12px]">Films & Feelings</p>
-        <div class="absolute top-0 overflow-hidden h-full md:h-[62.8%] z-[-99]">
-            <div class="absolute m-auto w-full bottom-[30%]">
-                <h2 class="text-2xl m-auto uppercase w-full bottom-[40%] text-white font-bold syne">Horror</h2>
-                <div class="flex gap-3 p-4 mt-2 rounded-full px-6 uppercase text-white bg-white/10 w-fit m-auto backdrop-blur-lg">
-                    <a>Explore Genre</a>
-                </div>
+        <div class="z-[999] absolute  m-auto w-full"> 
+            <h1 class=" syne font-bold text-[1rem] md:text-2xl mt-8 md:mt-12 uppercase">Binge <span class="text-orange-400">Watch</span></h1>
+            <p class="uppercase pt-1 md:pt-3 text-[0.6rem] text-slate-300  tracking-[6px] md:tracking-[12px]">Films & Feelings</p>
+        </div>
+
+        <div class="absolute top-0 overflow-hidden h-full md:h-[62.8%]">
+            <div class="absolute m-auto w-full top-[35%]  z-[999] md:top-[50%]">
+                <img class="pointer-events-none select-none w-[5rem] md:w-[6rem] m-auto" src="./assets/genresvgs/horror.svg">
+                
+                <a href="Horror/horror.html" class="flex items-center  gap-2 text-xs tracking-widest py-4 px-8 mt-6 rounded-full px-6 uppercase text-white bg-white/10 w-fit m-auto backdrop-blur-lg">
+                    <p>Explore Genre</p>
+                    <img src="./assets/icons/Frame.svg">
+                </a>
             </div>
-            <img class="h-[70%] md:h-auto w-screen" src="assets/horror.png"/>
+            <img class="pc h-[70%] pointer-events-none select-none md:h-auto brightness-[0.6]  h-full" src="assets/bgs/hor.webp"/>
+            <img class="mob w-screen h-[70%] pointer-events-none select-none brightness-[0.6]" src="./assets/bgs/hor-mb.webp">
         </div>
     </div>
-
-<!--    <section class="mt-[100%] md:mt-[24%]">
-        <ul class="flex uppercase blu font-semibold w-[50%] m-auto mt-7 justify-between items-center py-5 hidden md:flex">
-            <button class="uppercase hover:text-white">Horror</button>
-            <button class="uppercase hover:text-white">Rom-Com</button>
-            <button class="uppercase hover:text-white">Mystery</button>
-            <button class="uppercase hover:text-white">Anime</button>
-            <button class="uppercase hover:text-white">Action</button>
+<div class="h-[29rem] md:h-[19rem] lg:h-[28rem] z-[-99] relative"></div>
+<section class="pc">
+        <ul class="flex uppercase text-white/50 font-semibold w-[50%] m-auto mt-7 justify-between items-center py-5 hidden md:flex">
+            <a href="/"><button class="uppercase text-white">Horror</button></a>
+            <a href="/Romantic-comedy/romcom1.html"><button class="uppercase hover:text-white">Rom-Com</button></a>
+            <a href="/Thrilling-Mysteries/mysteries.html"><button class="uppercase hover:text-white">Mystery</button></a>
+            <a href="/Animation/animated.html"><button class="uppercase hover:text-white">Anime</button></a>
+            <a href="/Action/action_movies.html"><button class="uppercase hover:text-white">Action</button></a>
         </ul>
     </section>
-    <a href="Horror\horror.html"><center class="bg-white/10 p-4 w-11/12 md:w-[50%] my-3 m-auto text-white text-sm font-semibold uppercase">View All Horror Movies</center></a>
-    <p class="w-1/12 md:w-[50%] text-white text-sm mt-10 m-auto">
-        Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills 
-<br><br>Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills  
     
-Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills 
-<br><br>Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills  
-    </p>-->
+    <center class="mob"><select class="bg-white/10 rounded-xl p-4 w-11/12 md:w-[50%] my-1 m-auto text-white text-center text-sm font-semibold uppercase">
+        <option class="text-black">Horror</option>
+        <option class="text-black">Rom-Com</option>
+        <option class="text-black">Mystery</option>
+        <option class="text-black">Animation</option>
+        <option class="text-black">Action</option>
+    </select></center>
+
+    <p class="w-11/12 md:w-[50%] text-white/70 text-sm mt-5 mb-12 font-light m-auto">
+        Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills 
+        <br><br>Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills  
+            
+        Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills 
+        <br><br>Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills  
+    </p>
+
+    <section class="flex gap-7 md:gap-12 p-6 mb-2 uppercase text-white/60 m-auto justify-center w-full items-center text-sm">
+        <a  href="/About.html"  class=" hover:text-white">Designers</a>
+        <div class="flex gap-2">
+            <a  href="https://petrichor.events/technical_events/event?id=4&tech=1"  class=" hover:text-white">Webify 23</a>
+            <a  href="https://www.facebook.com/petrichor.iitpkd/" ><img class="opacity-60 w-[1.2rem] hover:opacity-100" src="/assets/icons/Frame-1.svg"></a>
+            <a href="https://www.instagram.com/petrichor.iitpkd/?hl=en" ><img class="opacity-60 w-[1.2rem] hover:opacity-100" src="/assets/icons/Frame-2.svg"></a>
+        </div>
+    </section>
 </body>
 </html>
