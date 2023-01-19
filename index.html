@@ -26,13 +26,13 @@
             <h1 class="font-bold text-[1rem] md:text-2xl w-full uppercase">Binge <span class="text-orange-400">Watch</span></h1>
             <p class="uppercase pt-1 md:pt-3 text-[0.6rem] text-slate-300  tracking-[6px] md:tracking-[12px]">Films & Feelings</p>
         </div>
-        <img class="pc  pointer-events-none select-none md:h-auto brightness-[0.8]  h-full" src="assets/bgs/hor.webp"/>
-        <img class="mob bottom-0 pointer-events-none w-screen croppp  bg-[#200900] select-none md:h-auto brightness-[0.8]  h-full" src="assets/bgs/hor-mb.webp"/>
+        <img class="desk pc  pointer-events-none select-none md:h-auto brightness-[0.8]  h-full" src=""/>
+        <img class="phon mob bottom-0 pointer-events-none w-screen croppp  bg-[#200900] select-none md:h-auto brightness-[0.8]  h-full" src=""/>
         
         <div class="absolute m-auto flex gap-8 flex-col top-1/2 w-full">
-            <img class="pointer-events-none select-none w-[5rem] md:w-[6rem] m-auto" src="assets/genresvgs/horror.svg">
+            <img class="svg pointer-events-none select-none w-[5rem] md:w-[6rem] m-auto" src="">
                 
-            <a href="Horror/horror.html" class="flex items-center  gap-2 text-xs tracking-widest py-4 px-8 mt-1 rounded-full px-6 uppercase text-white bg-white/10 w-fit m-auto backdrop-blur-lg">
+            <a href="" class="link flex items-center  gap-2 text-xs tracking-widest py-4 px-8 mt-1 rounded-full px-6 uppercase text-white bg-white/10 w-fit m-auto backdrop-blur-lg">
                 <p>Explore Genre</p>
                 <img src="assets/icons/Frame.svg">
             </a>
@@ -40,16 +40,16 @@
     </div>
 <section class="pc mt-5">
         <ul class="flex uppercase text-white/50 font-semibold w-[50%] m-auto justify-between items-center py-5 hidden md:flex">
-            <a href=""><button class="uppercase text-white">Horror</button></a>
-            <a href="Romantic-comedy/romcom1.html"><button class="uppercase hover:text-white">Rom-Com</button></a>
-            <a href="Thrilling-Mysteries/mysteries.html"><button class="uppercase hover:text-white">Mystery</button></a>
-            <a href="Animation/animated.html"><button class="uppercase hover:text-white">Anime</button></a>
-            <a href="Action/action_movies.html"><button class="uppercase hover:text-white">Action</button></a>
+            <button class="btn uppercase hover:text-white">Horror</button>
+            <button class="btn uppercase hover:text-white">Rom-Com</button>
+            <button class="btn uppercase hover:text-white">Mystery</button>
+            <button class="btn uppercase hover:text-white">Anime</button>
+            <button class="btn uppercase hover:text-white">Action</button>
         </ul>
     </section>
     
     <center class="mob relative mt-6 toppp"><select class="bg-white/10 rounded-xl p-4 w-10/12 md:w-[50%] my-1 m-auto text-white text-center text-sm font-semibold uppercase">
-        <option class="text-black">Horror</option>
+        <option class="select text-black">Horror</option>
         <option class="text-black">Rom-Com</option>
         <option class="text-black">Mystery</option>
         <option class="text-black">Animation</option>
@@ -82,5 +82,41 @@
             <a href="https://www.instagram.com/petrichor.iitpkd/?hl=en" ><img class="opacity-60 w-[1.2rem] hover:opacity-100" src="assets/icons/Frame-2.svg"></a>
         </div>
     </section>
+    <script>
+        let content = []
+        const svg = document.querySelector('.svg')
+        const pcsvg = document.querySelector('.desk')
+        const mobsvg = document.querySelector('.phon')
+        const btns = document.querySelectorAll('.btn')
+        const a = document.querySelector('.link')
+        
+        fetch('./data.json')
+        .then(response => response.json())
+        .then(data => {
+            content = data
+            btns[0].classList.add('text-white')
+            svg.src = data[0].textsvg
+            pcsvg.src = data[0].images.desktop
+            mobsvg.src = data[0].images.mobile
+            a.href = data[0].redirect
+        })
+        .catch((err) => console.error(err))
+
+        btns.forEach(btn => {
+            btn.addEventListener('click', (event)=> {
+                const genre = event.target.textContent
+                content.forEach(obj => {
+                    if (obj.genre == genre){
+                        const data = obj
+                        svg.src = data.textsvg
+                        pcsvg.src = data.images.desktop
+                        mobsvg.src = data.images.mobile
+                        a.href = data.redirect
+                    }
+                })
+            })
+        })
+
+    </script>
 </body>
 </html>

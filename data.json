@@ -1,0 +1,47 @@
+[
+    {
+        "genre": "Horror",
+        "images": {
+            "desktop": "assets/bgs/hor.webp",
+            "mobile": "assets/bgs/hor-mb.webp"
+        },
+        "textsvg": "assets/genresvgs/horror.svg",
+        "redirect": "./Horror/horror.html"
+    },
+    {
+        "genre": "Rom-Com",
+        "images": {
+            "desktop": "assets/bgs/rom.webp",
+            "mobile": "assets/bgs/rom-mb.webp"
+        },
+        "textsvg": "assets/genresvgs/romcom.svg",
+        "redirect": "./Romantic-comedy/romcom1.html"
+    },
+    {
+        "genre": "Action",
+        "images": {
+            "desktop": "assets/bgs/act.webp",
+            "mobile": "assets/bgs/act-mb.webp"
+        },
+        "textsvg": "assets/genresvgs/action.svg",
+        "redirect": "./Action/action_movies.html"
+    },
+    {
+        "genre": "Mystery",
+        "images": {
+            "desktop": "assets/bgs/mys.webp",
+            "mobile": "assets/bgs/mys-mb.webp"
+        },
+        "textsvg": "assets/genresvgs/mystery.svg",
+        "redirect": "./Thrilling-Mysteries/mysteries.html"
+    },
+    {
+        "genre": "Anime",
+        "images": {
+            "desktop": "assets/bgs/ani.webp",
+            "mobile": "assets/bgs/ani-mb.webp"
+        },
+        "textsvg": "assets/genresvgs/animation.svg",
+        "redirect": "./Animation/animated.html"
+    }
+]
