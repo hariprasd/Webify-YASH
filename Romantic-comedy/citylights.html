@@ -1,39 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Lights</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Lights - Rom-Com Movies</title>
+  <link rel="stylesheet" type="text/css" href="../index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+
+<body class="bg-[#1B0D1A] font-[Syne] overflow-x-hidden" >
     
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/City_Lights_%281931_theatrical_poster_-_retouched%29.jpg" alt="Image not found" style="width:400px;height:500px;">
-        <h1>City Lights</h1>
-        <p>Trailer:</p>
-        <p>duration:</p>
-        <p>Short description:</p>
-        <p>rating:</p>
-        <p>reviews:</p>
-        <p>release date:</p>
-        <p>Where to watch:</p>
-        <p>Cast:</p>
-        <h1>Similar movies:</h1>
-        <div>
-            <a href="chhichhore.html" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/Chhichhore_Poster.jpg/220px-Chhichhore_Poster.jpg" alt="Image not found" style="width:200px;height:300px;">
-            </a>
-            <a href="moderntimes.html" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Modern_Times_poster.jpg" alt="Image not found" style="width:200px;height:300px;">
-            </a>
-            <a href="lifeisbeautiful.html" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/7/7c/Vitaebella.jpg" alt="Image not found" style="width:200px;height:300px;">
-            </a>
-            <a href="forrestgump.html" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Forrest_Gump_poster.jpg/220px-Forrest_Gump_poster.jpg" alt="Image not found" style="width:200px;height:300px;">
+    <div class="ellipse rounded-full bg-pink-500/30 w-[30rem] blur-[80px] bottt top-[15%] fixed h-1/2 w-full lg:w-auto "></div>
+    
+    <div class="ellipse rounded-full pc bg-pink-500/30 w-[30rem] blur-[110px] bottt top-[5%] right-[-18%] fixed "></div>
+    <div class="ellipse rounded-full pc bg-pink-500/30 w-[30rem] blur-[110px] bottt bottom-[15%] left-[-10%] fixed "></div>
+    
+    
+    <div id="header" class="relative overflow-hidden h-[20rem] md:h-[26rem]">
+        <img class="pc  pointer-events-none select-none md:h-auto  h-full" src="../assets/film-solo/pc/rom-02.webp"/>
+        <img class="mob bottom-0 pointer-events-none w-screen croppp  bg-[#200900] grayscale select-none md:h-auto brightness-[0.2] h-full" src="../assets/film-solo/mob/rom04.webp"/>
+        
+        <div class="absolute m-auto flex gap-8 flex-col top-1/3 w-full">
+            <h1 class="text-3xl md:text-[5rem] relative text-white txtshad w-full font-bold text-center">City Lights</h1>
+            <a class="flex relative items-center h-fit centrrr gap-2 mt-8 text-xs tracking-widest py-4 px-8 rounded-full px-6 uppercase text-white bg-black/40 w-fit backdrop-blur-lg">
+                <p>Play Trailer</p>
+                <img src="../assets/icons/Frame.svg">
             </a>
         </div>
-    </div>    
+    </div>
+
+    <section class="w-[93%] leading-[3rem] text-lg md:w-1/2 m-auto p-6 mt-4">
+        <div class="text-white flex gap-3">
+            <h3>Duration</h3><p class="text-white/60">2hr 34mins</p>
+        </div>
+        
+        <div class="text-white flex gap-3">
+            <p>Rating </p><span class="text-yellow-500"> ★★★★✩</span>
+        </div>
+        
+        <div class="text-white flex flex-col text-justify -gap-2">
+            <h3>Short Description</h3><p class=" text-sm text-white/60">This classic story of love, tragedy and hope centers around a homeless tramp whom meets and instantly falls in love with a beautiful, albeit blind, flower seller.</p>
+        </div>
+        
+        <div class="text-white flex gap-5 items-center">
+            <p>Reviews </p><a href="https://www.rottentomatoes.com/" class="underline text-white/80 text-sm">Rotten Tomatoes ➚</a> <a href="https://www.imdb.com/" class="underline text-white/80 text-sm">IMDB ➚</a>
+        </div>
+        
+        <div class="text-white flex gap-3">
+            <p>Release Date </p><span class="text-white/60"> 7 March 1931</span>
+        </div>
+        
+        <!--<div class="text-white flex-wrap flex  gap-3">
+            <p>Where to watch </p><a href="https://www.hotstar.com/in/movies/City Lights/1260012713/watch?utm_source=gwa" class="text-white/60 underline"></a>
+        </div>-->
+        
+    <h2 class="text-xl text-white mt-16 font-bold uppercase ">Related Movies</h2>
+
+    <section class="w-auto overflow-x-scroll flex-start grayscale pb-6  h-full flex gap-7 my-8">
+
+        <a href="chhichhore.html"><div class="flex flex-col gap-4 h-full overflow-hidden justify-center items-center p-2 md:p-4 border-white/[.1] max-w-[18rem] min-w-[12rem] w-auto border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] md:w-[10rem] md:p-4 object-contain" src="../assets/film-solo/mob/rom04.webp" >
+            <h3 class="text-md md:text-lg text-center text-white uppercase font-bold">Chhichhore</h3>
+        </div></a>
+
+        <a href="forrestgump.html"><div class="flex flex-col gap-4 h-full overflow-hidden justify-center items-center p-2 md:p-4 border-white/[.1] max-w-[18rem] min-w-[12rem] w-auto border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] md:w-[10rem] md:p-4 object-contain" src="../assets/film-solo/mob/rom01.webp" >
+            <h3 class="text-md md:text-lg text-center text-white uppercase font-bold">Forrest Gump</h3>
+        </div></a>
+
+        <a href="lifeisbeautiful.html"><div class="flex flex-col gap-4 h-full overflow-hidden justify-center items-center p-2 md:p-4 border-white/[.1] max-w-[18rem] min-w-[12rem] w-auto border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] md:w-[10rem] md:p-4 object-contain shrink-0" src="../assets/film-solo/mob/rom02.webp" >
+            <h3 class="text-md md:text-lg text-center text-white uppercase font-bold">Life is Beautiful</h3>
+        </div></a>
+
+        <a href="moderntimes.html"><div class="flex flex-col gap-4 h-full overflow-hidden justify-center items-center p-2 md:p-4 border-white/[.1] max-w-[18rem] min-w-[12rem] w-auto border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] md:w-[10rem] md:p-4 object-contain" src="../assets/film-solo/mob/rom03.webp" >
+            <h3 class="text-md md:text-lg text-center text-white uppercase font-bold">Modern Times</h3>
+        </div></a>
+
+    </section>
+
+    </section>
+
+    <section>
+        <div class="flex gap-4 flex-wrap text-xs uppercase justify-center flex-start mob toppp p-5 mt-4 text-white text-[0.6rem]" >
+            <a href="Horror/horror.html">Horror</a>/
+            <a href="../Animation/animated.html">Animation</a>/
+            <a href="../Romantic-comedy/romcom1.html">Rom-Com</a>/
+            <a href="../Thrilling-Mysteries/mysteries.html">Mysteries</a>/
+            <a href="../Action/action_movies.html">Action</a>
+        </div>
+    </section>
+
+    <section id="footer" class="flex gap-7 md:gap-12 p-6 mb-2 uppercase text-white/60 m-auto justify-center w-full items-center text-sm">
+        <a  href="../About.html"  class=" hover:text-white">Designers</a>
+        <div class="flex gap-2">
+            <a  href="https://petrichor.events/technical_events/event?id=4&tech=1"  class=" hover:text-white">Webify 23</a>
+            <a  href="https://www.facebook.com/petrichor.iitpkd/" ><img class="opacity-60 w-[1.2rem] hover:opacity-100" src="../assets/icons/Frame-1.svg"></a>
+            <a href="https://www.instagram.com/petrichor.iitpkd/?hl=en" ><img class="opacity-60 w-[1.2rem] hover:opacity-100" src="../assets/icons/Frame-2.svg"></a>
+        </div>
+    </section>
+
 </body>
+
 </html>

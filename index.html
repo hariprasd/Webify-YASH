@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <section class="flex gap-7 md:gap-12  justify-center items-center mb-2 uppercase text-white/60 m-auto justify-center w-10/12 items-center">
+    <section class="flex gap-7 md:gap-12  justify-center items-center  my-8 uppercase text-white/60 m-auto justify-center w-10/12 items-center">
         <a  href="About.html"  class=" hover:text-white">Designers</a>
         <div class="flex gap-2">
             <a  href="https://petrichor.events/technical_events/event?id=4&tech=1"  class=" hover:text-white">Webify 23</a>
@@ -82,6 +82,7 @@
             <a href="https://www.instagram.com/petrichor.iitpkd/?hl=en" ><img class="opacity-60 w-[1.2rem] hover:opacity-100" src="assets/icons/Frame-2.svg"></a>
         </div>
     </section>
+
     <script>
         let content = []
         const svg = document.querySelector('.svg')
@@ -94,7 +95,6 @@
         .then(response => response.json())
         .then(data => {
             content = data
-            btns[0].classList.add('text-white')
             svg.src = data[0].textsvg
             pcsvg.src = data[0].images.desktop
             mobsvg.src = data[0].images.mobile

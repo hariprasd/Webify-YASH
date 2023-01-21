@@ -1,36 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The shining</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Shining - Horror Movies</title>
+  <link rel="stylesheet" type="text/css" href="../index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <img width="300px" height="300px" src="https://alternativemovieposters.com/wp-content/uploads/2022/10/Stella-Ygris_Shining.jpg" alt="">
-    <h1>The Shining</h1>
-    <p>Trailer:</p>
-    <p>duration:</p>
-    <p>Short description:</p>
-    <p>rating:</p>
-    <p>reviews:</p>
-    <p>release date:</p>
-    <p>Where to watch:</p>
-    <p>Cast:</p>
-    <h1>Similar movies:</h1>
-    <div>
-        <a href="alien.html">
-            <img width="250px" height="250px" src="https://i.pinimg.com/originals/03/5a/1e/035a1e61ba9e4b1fd767bf8066c6f45e.jpg" alt="">
-        </a>
-        <a href="psycho.html">
-            <img width="250px" height="250px" src="https://i.etsystatic.com/21420603/r/il/81fd11/2782690640/il_fullxfull.2782690640_nn4r.jpg" alt="">
-        </a>
-        <a href="tumbbad.html">
-            <img width="250px" height="250px"  src="https://st1.bollywoodlife.com/wp-content/uploads/2018/07/tumbbad.png" alt="">
-        </a>
-        <a href="thing.html">
-            <img width="250px" height="250px" src="https://images-na.ssl-images-amazon.com/images/I/61Mf%2B-TcV8L.jpg" alt="">
-        </a>
+
+<body class="bg-[#1B0D0D] font-[Syne] overflow-x-hidden" >
+    
+    <div class="ellipse rounded-full bg-red-900/30 w-[30rem] blur-[80px] bottt top-[15%] fixed h-1/2 w-full lg:w-auto "></div>
+    
+    <div class="ellipse rounded-full pc bg-red-900/30 w-[30rem] blur-[110px] bottt top-[5%] right-[-18%] fixed "></div>
+    <div class="ellipse rounded-full pc bg-red-900/30 w-[30rem] blur-[110px] bottt bottom-[15%] left-[-10%] fixed "></div>
+    
+    
+    <div id="header" class="relative overflow-hidden h-[20rem] md:h-[26rem]">
+        <img class="pc  pointer-events-none select-none md:h-auto brightness-[0.6] grayscale h-full" src="../assets/film-solo/pc/hor-05.webp"/>
+        <img class="mob bottom-0 pointer-events-none w-screen croppp  bg-[#200900] grayscale select-none md:h-auto brightness-[0.2] h-full" src="../assets/film-solo/mob/hor01.webp"/>
+        
+        <div class="absolute m-auto flex gap-8 flex-col top-1/3 w-full">
+            <h1 class="text-3xl md:text-[5rem] relative text-white w-full font-bold text-center">The Shining</h1>
+            <a class="flex relative items-center h-fit centrrr gap-2 mt-8 text-xs tracking-widest py-4 px-8 rounded-full px-6 uppercase text-white bg-white/10 w-fit backdrop-blur-lg">
+                <p>Play Trailer</p>
+                <img src="../assets/icons/Frame.svg">
+            </a>
+            <a href="horror.html" class="text-white/70 text-center font-thin underline">Go back to Genre</a>
+        </div>
     </div>
+
+    <section class="w-[93%] leading-[3rem] text-lg md:w-1/2 m-auto p-6 mt-4">
+        <div class="text-white flex gap-3">
+            <h3>Duration</h3><p class="text-white/60">2hr 34mins</p>
+        </div>
+        
+        <div class="text-white flex gap-3">
+            <p>Rating </p><span class="text-yellow-500"> ★★★★✩</span>
+        </div>
+        
+        <div class="text-white flex flex-col text-justify -gap-2">
+            <h3>Short Description</h3><p class=" text-sm text-white/60">The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission.</p>
+        </div>
+        
+        <div class="text-white flex gap-5 items-center">
+            <p>Reviews </p><a href="https://www.rottentomatoes.com/" class="underline text-white/80 text-sm">Rotten Tomatoes ➚</a> <a href="https://www.imdb.com/" class="underline text-white/80 text-sm">IMDB ➚</a>
+        </div>
+        
+        <div class="text-white flex gap-3">
+            <p>Release Date </p><span class=" text-white/60"> 6 December 1979</span>
+        </div>
+        
+        <div class="text-white flex-wrap flex  gap-3">
+            <p>Where to watch </p><a href="https://www.youtube.com/" class="text-white/60"> YouTube ➚</a>
+        </div>
+        
+    <h2 class="text-xl text-white mt-16 font-bold uppercase ">Related Movies</h2>
+
+    <section class="w-auto overflow-x-scroll flex-start grayscale pb-6  h-full flex gap-7 my-8">
+
+        <a href="tumbbad.html"><div class="flex flex-col gap-4 h-full overflow-hidden justify-center items-center p-2 md:p-4 border-white/[.1] max-w-[18rem] min-w-[12rem] w-auto border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] md:w-[10rem] md:p-4 object-contain" src="../assets/film-solo/mob/hor04.webp" >
+            <h3 class="text-md md:text-lg text-center text-white uppercase font-bold">Tumbbad</h3>
+        </div></a>
+
+        <a href="thing.html"><div class="flex flex-col gap-4 h-full overflow-hidden justify-center items-center p-2 md:p-4 border-white/[.1] max-w-[18rem] min-w-[12rem] w-auto border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] md:w-[10rem] md:p-4 object-contain" src="../assets/film-solo/mob/hor05.webp" >
+            <h3 class="text-md md:text-lg text-center text-white uppercase font-bold">The Thing</h3>
+        </div></a>
+
+        <a href="psycho.html"><div class="flex flex-col gap-4 h-full overflow-hidden justify-center items-center p-2 md:p-4 border-white/[.1] max-w-[18rem] min-w-[12rem] w-auto border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] md:w-[10rem] md:p-4 object-contain shrink-0" src="../assets/film-solo/mob/hor02.webp" >
+            <h3 class="text-md md:text-lg text-center text-white uppercase font-bold">Psycho</h3>
+        </div></a>
+
+        <a href="shining.html"><div class="flex flex-col gap-4 h-full overflow-hidden justify-center items-center p-2 md:p-4 border-white/[.1] max-w-[18rem] min-w-[12rem] w-auto border-2 justify-center rounded-2xl bg-white/[.04] drop-shadow-lg">
+            <img class="w-[5rem] md:w-[10rem] md:p-4 object-contain" src="../assets/film-solo/mob/hor03.webp" >
+            <h3 class="text-md md:text-lg text-center text-white uppercase font-bold">The Shining</h3>
+        </div></a>
+
+    </section>
+
+    </section>
+
+    <section>
+        <div class="flex gap-4 flex-wrap text-xs uppercase justify-center flex-start mob toppp p-5 mt-4 text-white text-[0.6rem]" >
+            <a href="Horror/horror.html">Horror</a>/
+            <a href="../Animation/animated.html">Animation</a>/
+            <a href="../Romantic-comedy/romcom1.html">Rom-Com</a>/
+            <a href="../Thrilling-Mysteries/mysteries.html">Mysteries</a>/
+            <a href="../Action/action_movies.html">Action</a>
+        </div>
+    </section>
+
+    <section id="footer" class="flex gap-7 md:gap-12 p-6 mb-2 uppercase text-white/60 m-auto justify-center w-full items-center text-sm">
+        <a  href="About.html"  class=" hover:text-white">Designers</a>
+        <div class="flex gap-2">
+            <a  href="https://petrichor.events/technical_events/event?id=4&tech=1"  class=" hover:text-white">Webify 23</a>
+            <a  href="https://www.facebook.com/petrichor.iitpkd/" ><img class="opacity-60 w-[1.2rem] hover:opacity-100" src="../assets/icons/Frame-1.svg"></a>
+            <a href="https://www.instagram.com/petrichor.iitpkd/?hl=en" ><img class="opacity-60 w-[1.2rem] hover:opacity-100" src="../assets/icons/Frame-2.svg"></a>
+        </div>
+    </section>
+
 </body>
+
 </html>
