@@ -111,7 +111,7 @@
         })
         .catch((err) => console.error(err))
 
-        opt.addEventListener('click', (event)=> {
+        opt.addEventListener('change', (event)=> {
             const genre = event.target.value
             content.forEach(obj => {
                 if (obj.genre == genre){
