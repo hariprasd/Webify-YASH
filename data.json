@@ -6,7 +6,9 @@
             "mobile": "assets/bgs/hor-mb.webp"
         },
         "textsvg": "assets/genresvgs/horror.svg",
-        "redirect": "./Horror/horror.html"
+        "redirect": "./Horror/horror.html",
+        "bg": "#1B0D0D",
+        "des": "Horror genre films are a popular form of entertainment that aim to elicit fear and terror in their audience. They typically explore themes of death, the supernatural, and the unknown and can take many forms such as slasher, supernatural, and psychological horror. These films often have a dedicated fanbase and are known for their suspenseful and frightening elements."
     },
     {
         "genre": "Rom-Com",
@@ -15,7 +17,9 @@
             "mobile": "assets/bgs/rom-mb.webp"
         },
         "textsvg": "assets/genresvgs/romcom.svg",
-        "redirect": "./Romantic-comedy/romcom1.html"
+        "redirect": "./Romantic-comedy/romcom1.html",
+        "bg": "#1B0D1A",
+        "des": "Romantic comedy genre films are a popular form of entertainment that combines elements of romance and comedy. They typically follow the romantic journey of the lead characters, often with humorous and light-hearted moments. These films often have a happy ending, where the lead characters end up together. They are known for their relatable and heartwarming stories, and are a popular choice for audiences looking for a feel-good and entertaining watch."
     },
     {
         "genre": "Action",
@@ -24,7 +28,9 @@
             "mobile": "assets/bgs/act-mb.webp"
         },
         "textsvg": "assets/genresvgs/action.svg",
-        "redirect": "./Action/action_movies.html"
+        "redirect": "./Action/action_movies.html",
+        "bg": "#1B150D",
+        "des": "Action genre films are a popular form of entertainment that feature intense and exciting scenes of physical feats, chase and fight sequences, and special effects. They often involve a hero or group of heroes fighting against a villain or group of villains, with the story emphasizing on the physical action and fast-paced sequences. These films often feature a strong male lead and are known for their fast-paced, thrilling and adrenaline-pumping storylines. They appeal to audiences who enjoy action-packed and suspenseful films."
     },
     {
         "genre": "Mystery",
@@ -33,7 +39,9 @@
             "mobile": "assets/bgs/mys-mb.webp"
         },
         "textsvg": "assets/genresvgs/mystery.svg",
-        "redirect": "./Thrilling-Mysteries/mysteries.html"
+        "redirect": "./Thrilling-Mysteries/mysteries.html",
+        "bg": "#141414",
+        "des": "Mystery genre films are a popular form of entertainment that focus on solving a puzzle or crime, often involving a detective or amateur sleuth. They typically feature a plot that keeps the audience in suspense and guessing until the end, with the mystery being the central element of the story. These films often have a strong plot, and are known for their ability to keep the audience engaged and guessing until the end. They appeal to audiences who enjoy solving puzzles and trying to figure out the mystery before the characters on screen do."
     },
     {
         "genre": "Anime",
@@ -42,6 +50,8 @@
             "mobile": "assets/bgs/ani-mb.webp"
         },
         "textsvg": "assets/genresvgs/animation.svg",
-        "redirect": "./Animation/animated.html"
+        "redirect": "./Animation/animated.html",
+        "bg": "#0D131B",
+        "des": "Anime genre films are a popular form of entertainment that originated in Japan. They are animated films that often have a distinct visual style and storytelling techniques. They can be based on existing manga (Japanese comics) or original stories and can cover a wide range of genres such as action, fantasy, romance, and science fiction. These films often have a dedicated fanbase and are known for their unique and imaginative storylines, dynamic characters, and visually striking animation. They appeal to audiences who enjoy a different form of animation and storytelling than traditional Western animation."
     }
 ]

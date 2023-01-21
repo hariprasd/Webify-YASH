@@ -21,7 +21,7 @@
     <meta property="og:image:type" content="image/png" />
 </head>
 
-<body class="bg-[#1B0D0D]">
+<body class="bg transition-2">
     
     <div class="ellipse rounded-full bg-red-900/30 blur-[80px] bottt top-[35%] absolute h-1/2 w-full lg:w-auto "></div>
     
@@ -57,20 +57,15 @@
         </ul>
     </section>
     
-    <center class="mob relative mt-6 toppp"><select class="bg-white/10 rounded-xl p-4 w-10/12 md:w-[50%] my-1 m-auto text-white text-center text-sm font-semibold uppercase">
+    <center class="mob relative mt-6"><select class="select bg-white/10 rounded-xl p-4 w-10/12 md:w-[50%] my-1 m-auto text-white text-center text-sm font-semibold uppercase">
         <option class="select text-black">Horror</option>
         <option class="text-black">Rom-Com</option>
         <option class="text-black">Mystery</option>
-        <option class="text-black">Animation</option>
+        <option class="text-black">Anime</option>
         <option class="text-black">Action</option>
     </select></center>
 
-    <p class="w-10/12 md:w-[50%] text-white/70 text-sm mt-5 mb-12 font-light m-auto">
-        Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills 
-        <br><br>Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills  
-            
-        Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills 
-        <br><br>Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills Horror Genre brings you chills  
+    <p class="para w-10/12 md:w-[50%] text-white/70 text-sm mt-5 mb-12 font-light m-auto">  
     </p>
     
     <section>
@@ -99,6 +94,9 @@
         const mobsvg = document.querySelector('.phon')
         const btns = document.querySelectorAll('.btn')
         const a = document.querySelector('.link')
+        const bg = document.querySelector('.bg')
+        const opt = document.querySelector('.select')
+        const para = document.querySelector('.para')
         
         fetch('./data.json')
         .then(response => response.json())
@@ -108,8 +106,25 @@
             pcsvg.src = data[0].images.desktop
             mobsvg.src = data[0].images.mobile
             a.href = data[0].redirect
+            bg.style.backgroundColor = data[0].bg
+            para.textContent = data[0].des
         })
         .catch((err) => console.error(err))
+
+        opt.addEventListener('click', (event)=> {
+            const genre = event.target.value
+            content.forEach(obj => {
+                if (obj.genre == genre){
+                    const data = obj
+                    svg.src = data.textsvg
+                    pcsvg.src = data.images.desktop
+                    mobsvg.src = data.images.mobile
+                    a.href = data.redirect
+                    bg.style.backgroundColor = data.bg
+                    para.textContent = data.des
+                }
+            })
+        })
 
         btns.forEach(btn => {
             btn.addEventListener('click', (event)=> {
@@ -121,6 +136,8 @@
                         pcsvg.src = data.images.desktop
                         mobsvg.src = data.images.mobile
                         a.href = data.redirect
+                        bg.style.backgroundColor = data.bg
+                        para.textContent = data.des
                     }
                 })
             })
