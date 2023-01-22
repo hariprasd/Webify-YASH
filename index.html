@@ -23,10 +23,10 @@
 
 <body class="bg transition-2">
     
-    <div class="ellipse rounded-full bg-red-900/30 blur-[80px] bottt top-[35%] absolute h-1/2 w-full lg:w-auto "></div>
+    <div class="ellipse rounded-full blur-[80px] bottt top-[35%] absolute h-1/2 w-full lg:w-auto "></div>
     
-    <div class="ellipse rounded-full pc bg-red-900/30 blur-[80px] bottt top-[35%] right-[6%] absolute "></div>
-    <div class="ellipse rounded-full pc bg-red-900/30 blur-[80px] bottt bottom-[5%] left-[5%] absolute "></div>
+    <div class="ellipse rounded-full pc blur-[80px] bottt top-[35%] right-[6%] absolute "></div>
+    <div class="ellipse rounded-full pc blur-[80px] bottt bottom-[5%] left-[5%] absolute "></div>
 
         
     <div id="header" class="relative overflow-hidden h-[20rem] md:h-[26rem]">
@@ -97,6 +97,9 @@
         const bg = document.querySelector('.bg')
         const opt = document.querySelector('.select')
         const para = document.querySelector('.para')
+        const ellipses = document.querySelectorAll('.ellipse')
+
+        console.log(ellipses);
         
         fetch('./data.json')
         .then(response => response.json())
@@ -108,6 +111,9 @@
             a.href = data[0].redirect
             bg.style.backgroundColor = data[0].bg
             para.textContent = data[0].des
+            ellipses.forEach(ellipse => {
+                ellipse.style.backgroundColor = data[0].ellipse
+            })
         })
         .catch((err) => console.error(err))
 
@@ -122,6 +128,9 @@
                     a.href = data.redirect
                     bg.style.backgroundColor = data.bg
                     para.textContent = data.des
+                    ellipses.forEach(ellipse => {
+                        ellipse.style.backgroundColor = data.ellipse
+                    })
                 }
             })
         })
@@ -138,6 +147,9 @@
                         a.href = data.redirect
                         bg.style.backgroundColor = data.bg
                         para.textContent = data.des
+                        ellipses.forEach(ellipse => {
+                            ellipse.style.backgroundColor = data.ellipse
+                        })
                     }
                 })
             })
