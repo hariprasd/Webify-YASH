@@ -1,6 +1,8 @@
 body{
     font-family: Syne;
     background-color: #0D131B;
+    opacity: 0;
+    animation: load 0.3s ease-in-out 0.2s forwards;
 }
 
 .txtshad{
@@ -120,4 +122,13 @@ body{
     /*--- HP Classics */
   
   }
-  
+
+@keyframes load {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
