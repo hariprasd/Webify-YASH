@@ -49,7 +49,7 @@
     </div>
 <section class="pc mt-5">
         <ul class="flex uppercase text-white/50 font-semibold w-[50%] m-auto justify-between items-center py-5 hidden md:flex">
-            <button class="btn uppercase hover:text-white">Horror</button>
+            <button class="btn uppercase text-white hover:text-white">Horror</button>
             <button class="btn uppercase hover:text-white">Rom-Com</button>
             <button class="btn uppercase hover:text-white">Mystery</button>
             <button class="btn uppercase hover:text-white">Anime</button>
@@ -99,6 +99,17 @@
         const para = document.querySelector('.para')
         const ellipses = document.querySelectorAll('.ellipse')
 
+        const getSelected = (genre) => {
+            btns.forEach(btn => {
+                btn.classList.remove('text-white')
+            })
+            btns.forEach(btn => {
+                if(genre === btn.textContent){
+                    btn.classList.add('text-white')
+                }
+            })
+        }
+
         console.log(ellipses);
         
         fetch('./data.json')
@@ -111,6 +122,7 @@
             a.href = data[0].redirect
             bg.style.backgroundColor = data[0].bg
             para.textContent = data[0].des
+            para.classList.add('added')
             ellipses.forEach(ellipse => {
                 ellipse.style.backgroundColor = data[0].ellipse
             })
@@ -140,6 +152,7 @@
                 const genre = event.target.textContent
                 content.forEach(obj => {
                     if (obj.genre == genre){
+                        getSelected(genre)
                         const data = obj
                         svg.src = data.textsvg
                         pcsvg.src = data.images.desktop
